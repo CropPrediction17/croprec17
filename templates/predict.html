@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <title>Crop Prediction</title>
+
+  <style>
+    
+    body{
+                margin:0;
+                padding: 0;
+                
+            }
+      .header{
+                overflow:hidden;
+              
+                margin-top: -5px;
+            }
+            
+            .header a{
+                float: left;
+                color: white;
+                text-align: center;
+          
+                padding: 20px 16px;
+                font-size: 20px;
+                width: 100px;
+                text-decoration: none;
+                font-weight: bold;
+
+            }
+            .header a:hover{
+                
+                color:#fff;
+            }
+            h1{
+            color:green;
+            position: absolute;
+            left:25%;
+            top:10%;
+            text-align: center;
+            font-size: 50px;
+            }
+            p{
+            color:green;
+            position: absolute;
+            left:16%;
+            top:20%;
+            text-align: center;
+            font-size: 30px;
+            }
+            form{
+                position: absolute;
+                top:35%;
+                left:10%;
+                color:white;
+                font-size: 20px;
+                text-align: center;
+                
+            }
+            
+      
+  </style>
+</head>
+
+  <body>
+    <img src="..\static\bgp.jpg" class="d-block w-100" alt="..." width="1365.5" height="653">
+        
+  
+    <div class="header" style="top: 0%;position:absolute;">
+      <a href="./index"style="font-family:cursive;">Home</a>    
+      <a href="./predict" style="font-family:cursive;">Prediction</a>  
+      <a href="./crops"style="font-family:cursive;">About</a>  
+      <a href="./"style="font-family:cursive;">Logout</a> 
+    </div>
+    <h1 style="font-family:cursive ;color:white">Crop Recommendation System</h1>
+    <p style="font-family:cursive ;color:white;">Enter Soil and Weather parameters value for Crop Recommendation</p>
+       <!-- {% if apple %}
+          <div class="alert alert-primary" >{{apple}}</div>
+        {% endif %}
+        {% if banana %}
+          <div class="alert alert-primary">{{banana}}</div>
+        {% endif %}
+        {% if blackgram %}
+          <div class="alert alert-primary">{{blackgram}}</div>
+        {% endif %}
+       {% if chickpea %}
+          <div class="alert alert-primary">{{chickpea}}</div>
+        {% endif %}
+        {% if coconut %}
+          <div class="alert alert-primary">{{coconut}}</div>
+        {% endif %}
+        {% if coffee %}
+          <div class="alert alert-primary">{{coffee}}</div>
+        {% endif %}
+        {% if cotton %}
+          <div class="alert alert-primary">{{cotton}}</div>
+        {% endif %}
+        {% if grapes %}
+          <div class="alert alert-primary">{{grapes}}</div>
+        {% endif %}
+        {% if jute %}
+          <div class="alert alert-primary">{{jute}}</div>
+        {% endif %}
+        {% if kidneybeans %}
+          <div class="alert alert-primary">{{kidneybeans}}</div>
+        {% endif %}
+        {% if lentil %}
+          <div class="alert alert-primary">{{lentil}}</div>
+        {% endif %}
+        {% if maize %}
+          <div class="alert alert-primary">{{maize}}</div>
+        {% endif %}
+        {% if mango %}
+          <div class="alert alert-primary">{{mango}}</div>
+        {% endif %}
+        {% if mothbeans %}
+          <div class="alert alert-primary">{{mothbeans}}</div>
+        {% endif %}
+        {% if mungbean %}
+          <div class="alert alert-primary">{{mungbean}}</div>
+        {% endif %}
+        {% if muskmelon %}
+          <div class="alert alert-primary">{{muskmelon}}</div>
+        {% endif %}
+        {% if orange %}
+          <div class="alert alert-primary">{{orange}}</div>
+        {% endif %}
+        {% if papaya %}
+          <div class="alert alert-primary">{{papaya}}</div>
+        {% endif %}
+        {% if pigeonpeas %}
+          <div class="alert alert-primary">{{pigeonpeas}}</div>
+        {% endif %}
+        {% if pomegranate %}
+          <div class="alert alert-primary">{{pomegranate}}</div>
+        {% endif %}
+        {% if rice %}
+          <div class="alert alert-primary">{{rice}}</div>
+        {% endif %}
+        {% if watermelon %}
+          <div class="alert alert-primary">{{watermelon}}</div>
+        {% endif %}-->
+         <form class="form-group" action="/predict" method='POST'>
+        
+        <label for="nitrogen" style="font-size: 23px;font-family:cursive;font-weight: bold;position:absolute;left: 88px;">Nitrogen:</label>
+
+        <input type="text" id="nitrogen" name="nitrogen" placeholder="Nitrogen" style="position:absolute;left: 200px;;color: green;font-size: 20px;font-family: cursive;font-weight: bold;">        
+        
+        <label for="potassium"style="font-size: 23px;font-family:cursive;font-weight: bold;position:absolute;left: 600px;">Potassium:</label>
+        <input type="text" id="potassium" name="potassium" placeholder="Potassium"style="position:absolute;left: 723px;color: green;font-size: 20px;font-family: cursive;font-weight: bold;"><br><br><br>
+        
+        <label for="phosporous" style="font-size: 23px;font-family:cursive;font-weight: bold;position:absolute;left:66px;">Phosporous:</label>
+        <input type="text" id="phosporous" name="phosporous" placeholder="Phosporous" style="position:absolute;left: 200px;color: green;font-size: 20px;font-family: cursive;font-weight: bold;">        
+        
+        
+        <label for="temperature" style="font-size: 23px;font-family:cursive;font-weight: bold;position:absolute;left:564px;">Temperature:</label>
+        <input type="text" id="temperature" name="temperature"placeholder="Temperature" style="position:absolute;left:723px;color: green;font-size: 20px;font-family: cursive;font-weight: bold;"><br><br><br>
+              
+        
+        <label for="humidity" style="font-size: 23px;font-family:cursive;font-weight: bold;position:absolute;left: 88px;">Humidity:</label>
+        <input type="text" id="humidity" name="humidity" placeholder="Humidity" style="position:absolute;left: 200px;;color: green;font-size: 20px;font-family: cursive;font-weight: bold;">        
+        
+        
+        <label for="ph"style="font-size: 23px;font-family:cursive;font-weight: bold;position:absolute;left: 680px;">ph:</label>
+        <input type="text" id="ph" name="ph"placeholder="ph"style="position:absolute;left: 723px;color: green;font-size: 20px;font-family: cursive;font-weight: bold;"><br><br><br>
+        
+        
+        
+        
+        <label for="rainfall"style="font-size: 23px;font-family:cursive;font-weight: bold;position:absolute;left: 370px;">Rainfall:</label>
+        <input type="text" id="rainfall" name="rainfall"placeholder="Rainfall" style="position:absolute;left: 470px;color: green;font-size: 20px;font-family: cursive;font-weight: bold;"><br><br><br>
+        </div><br><br><br>
+        <div class="text-center" style="position: absolute;left: 490px;top: 280px;">
+            
+            <button type="submit" style="background-color:white;border-width: 5px; height:50px;width: 190px;font-size: 20px;
+            color:green; font-family: cursive;font-weight: bold;border-color: green;">Predict crop</button>
+        </div>
+        </form>
+</body>
+</html>

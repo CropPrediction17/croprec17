@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <title>Crop Prediction</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+    }
+     
+
+      img{
+      position:relative;
+      width:200px;
+      height: 200px;
+      margin: 5px;
+      border: 6px double green;
+    
+      
+      
+
+
+    }
+    /*img{
+      position: absolute;
+      width:15%;
+      height:20vh;
+      top: 30%;
+      left:45px;
+    }*/
+      .header{
+                overflow:hidden;
+                background: green;
+                margin-top: -5px;
+            }
+            
+            .header a{
+                float: left;
+                color: white;
+                text-align: center;
+          
+                padding: 20px 16px;
+                font-size: 20px;
+                width: 100px;
+                text-decoration: none;
+                font-weight: bold;
+
+            }
+            .header a:hover{
+                background: black;
+                color:#fff;
+            }
+            .button{
+              position: absolute;
+              top:70%;
+              left: 50%;
+              transform:translate(-50%,-50%);
+              text-align: center;
+              color:green;
+              background-color: #fff;
+              height: 50px;
+              width:100px;
+              font-size: 20px;
+              font-weight: bold;
+              font-family: 'Times New Roman', Times, serif;
+              
+            }
+
+  
+  </style>
+  </head>
+  <body>
+    <div class="header">
+        <a href="./index" style="font-family: cursive">Home</a>    
+        <a href="./predict" style="font-family: cursive">Prediction</a>  
+        <a href="./crops"style="font-family: cursive">About</a>  
+        <a href="./"style="font-family: cursive">Logout</a>
+        
+    </div>
+    
+    
+
+  
+  <img src="..\static\applec.jpg" class="d-block w-100" alt="..." style="left: 50px;">
+  <a href="./appled" style="color: green;position:absolute;top:43%;left:10%;font-family: cursive">Apple</a>
+  <img src="..\static\bananac.jpg" class="d-block w-100" alt="..." style="left: 75px;">
+  <a href="./bananad" style="color: green;position:absolute;top:43%;left:29%;font-family: cursive">Banana</a>
+  <img src="..\static\blackgramc.jpg" class="d-block w-100" alt="..."style="left: 100px;">
+  <a href="./blackgramd" style="color: green;position:absolute;top:43%;font-family: cursive;left:47%;">Blackgram</a>
+  <img src="..\static\chickpeac.jpg" class="d-block w-100" alt="..."style="left: 125px;">
+  <a href="./chickpead" style="color: green;position:absolute;top:43%;left:66%;font-family: cursive">Chickpea</a>
+  <img src="..\static\coconutc.jpg" class="d-block w-100" alt="..."style="left:150px;">
+  <a href="./coconutd" style="color: green;position:absolute;top:43%;left:85%;font-family: cursive">Coconut</a>
+  <img src="..\static\coffeec.jpg" class="d-block w-100" alt="..."style="top: 50px;left: 50px;">
+  <a href="./coffeed" style="color: green;position:absolute;top:85%;left:10%;font-family: cursive">Coffee</a>
+  <img src="..\static\cottonc.jpeg" class="d-block w-100" alt="..." style="top: 50px;left: 75px;">
+  <a href="./cottond" style="color: green;position:absolute;top:85%;left:29%;font-family: cursive">Cotton</a>
+  <img src="..\static\grapesc.jpg" class="d-block w-100" alt="..." style="top: 50px;left: 100px;">
+  <a href="./grapesd" style="color: green;position:absolute;top:85%;left:47%;font-family: cursive">Grapes</a>
+  <img src="..\static\jutec.jpg" class="d-block w-100" alt="..." style="top: 50px;left: 125px;">
+  <a href="./juted" style="color: green;position:absolute;top:85%;left:66%;font-family: cursive">Jute</a>
+  <img src="..\static\kidneybeansc.jpg" class="d-block w-100" alt="..." style="top: 50px;left: 150px;">
+  <a href="./kidneybeansd" style="color: green;position:absolute;top:85%;left:83%;font-family: cursive">Kidneybeans</a>
+  <img src="..\static\lentilc.jpg" class="d-block w-100" alt="..." style="top: 100px;left: 50px;">
+  <a href="./lentild" style="color: green;position:absolute;top:127%;left:10%;font-family: cursive">Lentil</a>
+  <img src="..\static\maizec.jpg" class="d-block w-100" alt="..." style="top: 100px;left: 75px;">
+  <a href="./maized" style="color: green;position:absolute;top:127%;left:29%;font-family: cursive">Maize</a>
+  <img src="..\static\mangoc.jpg" class="d-block w-100" alt="..." style="top: 100px;left: 100px;">
+  <a href="./mangod" style="color: green;position:absolute;top:127%;left:47%;font-family: cursive">Mango</a>
+  <img src="..\static\mothbeansc.jpg" class="d-block w-100" alt="..." style="top: 100px;left: 125px;">
+  <a href="./mothbeansd" style="color: green;position:absolute;top:127%;left:66%;font-family: cursive">Mothbeans</a>
+  <img src="..\static\mungbeansc.jpg" class="d-block w-100" alt="..." style="top: 100px;left: 150px;">
+  <a href="./mungbeand" style="color: green;position:absolute;top:127%;left:84%;font-family: cursive">Mungbeans</a>
+  <img src="..\static\muskmelonc.jpg" class="d-block w-100" alt="..." style="top: 150px;left: 50px;">
+  <a href="./muskmelond" style="color: green;position:absolute;top:169%;left:9%;font-family: cursive">Muskmelon</a>
+  <img src="..\static\orangec.jpg" class="d-block w-100" alt="..." style="top: 150px;left: 75px;">
+  <a href="./oranged" style="color: green;position:absolute;top:169%;left:29%;font-family: cursive">Orange</a>
+  <img src="..\static\papayac.jpg" class="d-block w-100" alt="..." style="top: 150px;left: 100px;">
+  <a href="./papayad" style="color: green;position:absolute;top:169%;left:47%;font-family: cursive">Papaya</a>
+  <img src="..\static\pigeonpeasc.jpg" class="d-block w-100" alt="..." style="top: 150px;left: 125px;">
+  <a href="./pigeonpeasd" style="color: green;position:absolute;top:169%;left:66%;font-family: cursive">Pigeonpeas</a>
+  <img src="..\static\pomegranatec.jpg" class="d-block w-100" alt="..." style="top: 150px;left: 150px;">
+  <a href="./pomegranated" style="color: green;position:absolute;top:169%;left:84%;font-family: cursive">Pomegranate</a>
+  <img src="..\static\ricec.jpg" class="d-block w-100" alt="..." style="top: 200px;left: 50px;">
+  <a href="./riced" style="color: green;position:absolute;top:211%;left:11%;font-family: cursive">Rice</a>
+  <img src="..\static\watermelonc.jpg" class="d-block w-100" alt="..." style="top: 200px;left: 75px;">
+  <a href="watermelond" style="color: green;position:absolute;top:211%;left:28%;font-family: cursive">Watermelon</a>
+  </body>
+  </html>

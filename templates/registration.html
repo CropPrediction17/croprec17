@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1,shrink-to-fit-no">
+        <style>
+            body{
+                        margin:0;
+                        padding: 0;
+                        
+                    }
+        </style>
+    </head>
+    <body class="bg-nav">
+        <img src="..\static\bg1.jpg" class="d-block w-100" alt="..." width="1365.5" height="653">
+        
+        
+        <div class="col-md-8" style="position:absolute;top:10%;color:white;font-family: cursive;left:33%;">
+            <h1 class="text-light display-4 mt-100" style="font-size: 60px;">Enroll yourself!!</h1>
+            
+        </div>
+        <div class="col-md-4 mt-100">
+            <div class="card">
+                <div class="card-body">
+            <form class="form" method="POST" action="/add_user"style="position:absolute;top:35%;left:39%">
+                <input type="text" class="form-control" name="uname" placeholder="Name" required style="position: absolute;font-size:20px;font-family:cursive;color:green;font-weight: bold;"></br></br></br>
+            
+                <input type="email" class="form-control" name="uemail" placeholder="Email" required style="position: absolute;font-size:20px;font-family:cursive;color:green;font-weight: bold;"></br></br></br>
+                <input type="password" class="form-control" name="upassword" minlength="6" placeholder="Password" required style="position: absolute;font-size:20px;font-family:cursive;color:green;font-weight: bold;"></br></br></br>
+                <input type="submit" class="btn btn-primary btn-block btn-lg" value="Register"  style="font-size: 30px;color:white;background: transparent;border:white;font-family: cursive;position:absolute;left:80px;font-weight: bold;"></br>
+            </form>
+            <p class="mt-2"style="position:absolute;top:70%;left:37%;font-size:20px;color:white;font-family:cursive">Already a member? <a href="/login" style="color:white;">Login here</a> <a href="/"style="color:white">Home</a></p>
+        </div>
+        </div>
+        </div>
+        
+    </body>
+    </html>

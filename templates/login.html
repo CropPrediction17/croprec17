@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1,shrink-to-fit-no">
+        <style>
+            body{
+                        margin:0;
+                        padding: 0;
+                        
+                    }
+        </style>
+    </head>
+    <body class="bg-nav">
+        <img src="..\static\bg2.jpeg" class="d-block w-100" alt="..." width="1365.5" height="653">
+        
+        
+            <h1 class="text-light" style="position:absolute;font-size: 60px; text-align: center;top:15%;left:28%;color:white;font-family: cursive;">Please login yourself!!</h1>
+            
+        
+        <div class="col-md-4 mt-100">
+            <form class="form" method="POST" action="/login_validation" style="position: absolute;top:40%;left:40%">
+                <input type="email" class="form-control" name="email" placeholder="Email" required style="font-size:20px;font-weight: bold;font-family: cursive;color: green;" ></br></br>
+            
+                <input type="password" class="form-control" name="password" placeholder="Password" required style="font-size: 20px;font-weight: bold;font-family: cursive;color: green;"></br></br>
+                <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login" style="font-size: 30px;color:white;background:transparent;border:none;font-family:cursive;position: absolute;left:35%;font-weight: bold;"></br>
+            </form>
+            <p class="mt-2"style="position:absolute;top:65%;left:38%;font-size:20px;font-family:cursive;color:white;">Not a member? <a href="/register"style="color:white">Create account</a> <a href="/" style="color:white;">Home</a></p>
+       </div>
+    </body>
+    </html>
